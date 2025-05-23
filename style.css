@@ -1,0 +1,232 @@
+    * { box-sizing: border-box; }
+    body, html {
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      min-height: 100vh;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      width: 95%;
+    }
+    form {
+      background: #fff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    form img.logo {
+      display: block;
+      margin: 0 auto 25px;
+      height: 50px;
+    }
+    form h2 {
+      text-align: center;
+      color: #003087;
+      margin-bottom: 10px;
+    }
+    form p.total {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 25px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #005ea2;
+    }
+    input[type=text], input[type=number], input[list] {
+      width: 100%;
+      padding: 14px;
+      font-size: 1.1rem;
+      border: none;
+      border-bottom: 2px solid #bbb;
+      background: transparent;
+      margin-bottom: 20px;
+    }
+    input:focus {
+      border-color: #0070ba;
+      outline: none;
+    }
+    .input-row {
+      display: flex;
+      gap: 20px;
+    }
+    .input-row > div {
+      flex: 1;
+    }
+    .card-flags {
+      display: flex;
+      gap: 10px;
+      margin: 10px 0 20px;
+    }
+    .card-flags img {
+      height: 30px;
+    }
+    button {
+      background: #0070ba;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 1.1rem;
+      width: 100%;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005c99;
+    }
+    .overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+    .overlay.active {
+      display: flex;
+    }
+    .popup {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(0,0,0,0.15);
+    }
+    .loader {
+      border: 5px solid #e0e0e0;
+      border-top: 5px solid #0070ba;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: auto;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    footer {
+  background-color: #001c64;
+  color: white;
+  padding: 40px 20px 25px;
+  font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.footer-logo img {
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+.footer-menus {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  min-width: 140px;
+}
+
+.footer-column h4 {
+  font-size: 1rem;
+  color: #99c2ff;
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  display: block;
+  color: #c6dbf7;
+  text-decoration: none;
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  max-width: 1000px;
+  margin: 20px auto 0;
+  text-align: center;
+  border-top: 1px solid #224080;
+  padding-top: 15px;
+}
+
+.footer-links-inline {
+  margin-top: 10px;
+}
+
+.footer-links-inline a {
+  color: #99c2ff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.footer-links-inline a:hover {
+  color: white;
+}
+/* MENU SUPERIOR */
+header {
+  background-color: #001c64;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #c6dbf7;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: white;
+}
+
+/* Ajustar o conteúdo para não ficar escondido atrás do menu */
+body {
+  padding-top: 70px;
+}
